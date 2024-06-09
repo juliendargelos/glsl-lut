@@ -4,14 +4,13 @@ var createContext = require('gl-context')
 var createTex2d   = require('gl-texture2d')
 var glslify       = require('glslify')
 var createShell   = require('gl-now')
-var lena          = require('lena')
 
 canvas.width = 512
 canvas.height = 512
-document.body.style.margin = "0";
+document.body.style.margin = "20px";
 
 var gl = createContext(canvas, render)
-var tex = createTex2d(gl, lena)
+var baboonTex = getTex2D("baboon.png")
 var lookupTex1 = getTex2D("lookup_selective_color.png");
 var lookupTex2 = getTex2D("lookup_miss_etikate.png");
 var lookupTex = lookupTex1;
@@ -36,11 +35,11 @@ canvas.addEventListener("mousedown", function(ev) {
 })
 
 function render() {
-  if (!lookupTex.texture)
+  if (!lookupTex.texture || !baboonTex.texture)
     return;
   shader.bind()
   shader.uniforms.stop = mouseX;
-  shader.uniforms.uTexture = tex.bind(0)
+  shader.uniforms.uTexture = baboonTex.texture.bind(0)
   shader.uniforms.uLookup = lookupTex.texture.bind(1);
   triangle(gl)
 }

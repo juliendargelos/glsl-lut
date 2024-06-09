@@ -1,10 +1,10 @@
-# glsl-lut [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
+# glsl-lut [![unstable](https://badges.github.io/stability-badges/dist/unstable.svg)](https://github.com/badges/stability-badges)
 
-[![ABTest](http://i.imgur.com/QbSAX2h.png)](http://mattdesl.github.io/glsl-lut/example/demo.html)
+[![ABTest](https://i.imgur.com/yCU0d41.png)](https://mattdesl.github.io/glsl-lut/example/demo.html)
 
-[Demo here](http://mattdesl.github.io/glsl-lut/example/demo.html)
+[Demo here](https://mattdesl.github.io/glsl-lut/example/demo.html)
 
-Use a texture as a lookup table to apply color transforms in a shader. Original implementation from GPUImage, see [here](http://liovch.blogspot.ca/2012/07/add-instagram-like-effects-to-your-ios.html). For more details on the concept, see [here](https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter24.html).
+Use a texture as a lookup table to apply color transforms in a shader. Original implementation from GPUImage, see [here](https://liovch.blogspot.ca/2012/07/add-instagram-like-effects-to-your-ios.html). For more details on the concept, see [here](https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter24.html).
 
 This is geared towards OpenGL ES, so no 3D textures are used, and the lookup table is 512x512 (using every 4th color).
 
@@ -62,4 +62,4 @@ glsl-lut > images/lut.png
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/mattdesl/glsl-lut/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](https://github.com/mattdesl/glsl-lut/blob/master/LICENSE.md) for details.

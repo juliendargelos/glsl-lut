@@ -5,7 +5,6 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
-  "dependencies": {},
   "devDependencies": {
     "a-big-triangle": "0.0.0",
     "browserify": "^9.0.8",
@@ -16,7 +15,6 @@
     "gl-shader": "^4.0.1",
     "gl-texture2d": "~1.0.1",
     "glslify": "^2.1.2",
-    "lena": "~1.0.0",
     "tape": "~2.13.2",
     "watchify": "^3.1.1"
   },
