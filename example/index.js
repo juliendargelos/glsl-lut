@@ -7,7 +7,7 @@ var createShell   = require('gl-now')
 
 canvas.width = 512
 canvas.height = 512
-document.body.style.margin = "20px";
+document.body.style.margin = "0";
 
 var gl = createContext(canvas, render)
 var baboonTex = getTex2D("baboon.png")
